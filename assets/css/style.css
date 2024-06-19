@@ -1,5 +1,7 @@
 :root {
   --text-color: #667085;
+  --main-color: #8E2424;
+  --heading-color: #101828;
 }
 
 body {
@@ -9,25 +11,15 @@ body {
 
 .navbar {
   display: flex;
-  background-color: #FFFFFF;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1280px;
-  height: 44px;
-  padding: 0px 32px 0px 32px;
+  padding: 1rem 2rem;
 }
 
 .button-base {
   display: flex;
   text-align: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .button-base-logo {
@@ -69,7 +61,7 @@ body {
 }
 
 .navigation-actions-button-start {
-  padding: 10px 18px 10px 18px;
+  padding: 0.63rem 1.13rem;
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
@@ -81,13 +73,46 @@ body {
 }
 
 .navigation-actions-button-register {
-  border: 1px solid #8E2424;
+  border: 1px solid var(--main-color);
   border-radius: 8px;
-  padding: 10px 18px 10px 18px;
-  background: #8E2424;
+  padding: 0.63rem 1.13rem;
+  background: var(--main-color);
   box-shadow: 0px 1px 2px 0px #1018280D;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.50rem;
+  height: 25.44rem;
+  padding: 6rem 0;
+}
+
+.cabecalho-subheading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--main-color);
+}
+
+.cabecalho-heading {
+  padding: 0px 2rem;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: var(--heading-color);
+}
+
+.cabecalho-supporting-text {
+  padding: 1rem 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
 }
