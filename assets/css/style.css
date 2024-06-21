@@ -2,6 +2,8 @@
   --text-color: #667085;
   --main-color: #8e2424;
   --heading-color: #101828;
+  --footer-color: #98A2B3;
+  --formulario-background: #F9FAFB;
 }
 
 body {
@@ -107,6 +109,7 @@ body {
   font-weight: 600;
   line-height: 60px;
   letter-spacing: -0.02em;
+  text-align: center;
   color: var(--heading-color);
 }
 
@@ -124,6 +127,7 @@ body {
 
 .metricas-content {
   display: flex;
+  flex-direction: row;
   gap: 2em;
 }
 
@@ -153,6 +157,23 @@ body {
   line-height: 24px;
   text-align: left;
   color: var(--text-color);
+}
+
+@media screen and (max-width: 840px) {
+
+  .metricas {
+    margin-top: 6rem;
+  }
+
+  .metricas-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metricas-content-article {
+    width: 50%;
+  }
+
 }
 
 .vagas {
@@ -194,6 +215,7 @@ body {
   font-weight: 600;
   line-height: 44px;
   letter-spacing: -0.02em;
+  text-align: center;
   color: var(--heading-color);
 }
 
@@ -338,4 +360,87 @@ body {
     font-weight: 400;
     line-height: 20px;
   }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 6rem 0;
+  background-color: var(--formulario-background);
+}
+
+.formulario-container {
+  padding: 0 2rem;
+}
+
+.formulario-container-content {
+  padding: 0 4rem;
+}
+
+.formulario-container-content-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  color: var(--text-color);
+
+  .heading {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
+
+  .supporting {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.formulario-container-content-email {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  width: Hug (492px)px;
+  height: Hug (48px)px;
+  gap: 16px;
+}
+
+.formulario-email-input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 0.75rem 0.88rem 0.75rem 1rem;
+  border: 1px solid #D0D5DD;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+  width: 360px;
+  height: Hug(48px);
+  background: none;
+}
+
+.formulario-email-button {
+  width: 7.25rem;
+  height: 3rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  border: 1px 0px 0px 0px;
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 2px 0px #1018280D;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.formulario-footer {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--footer-color);
 }
