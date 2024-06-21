@@ -10,26 +10,26 @@
   <body>
     <nav class="navbar">
 
-      <div class="button-base">
-        <img class="button-base-logo" src="./assets/images/logo.svg" alt="Logo globo">
-        <h1 class="button-base-text">OptimusTech</h1>
-      </div>
+      <div class="navbar-button-base">
+        <img class="navbar-button-base-logo" src="./assets/images/logo.svg" alt="Logo globo">
+        <h1 class="navbar-button-base-text">OptimusTech</h1>
+      </div> <!-- navbar-button-base -->
 
-      <div class="content">
+      <div class="navbar-content">
         <ul>
-          <li><a class="content-link" href="#">Home</a></li>
-          <li><a class="content-link" href="#">Produtos</a></li>
-          <li><a class="content-link" href="#">Recursos</a></li>
-          <li><a class="content-link" href="#">Sobre nós</a></li>
+          <li><a class="navbar-content-link" href="#">Home</a></li>
+          <li><a class="navbar-content-link" href="#">Produtos</a></li>
+          <li><a class="navbar-content-link" href="#">Recursos</a></li>
+          <li><a class="navbar-content-link" href="#">Sobre nós</a></li>
         </ul>            
-      </div>
+      </div> <!-- navbar-content -->
 
-      <div class="navigation-actions">
-        <button class="navigation-actions-button-start">Entrar</button>
-        <button class="navigation-actions-button-register">Cadastrar</button>
-      </div>
+      <div class="navbar-navigation-actions">
+        <button class="navbar-navigation-actions-button-start">Entrar</button>
+        <button class="navbar-navigation-actions-button-register">Cadastrar</button>
+      </div> <!-- navbar-navigation-actions -->
 
-    </nav>
+    </nav> <!-- navbar -->
 
     <section class="cabecalho">
 
@@ -40,7 +40,7 @@
         que é realmente importante para elas.
       </p>
 
-    </section>
+    </section> <!-- cabecalho -->
 
     <section class="metricas">
 
@@ -78,9 +78,9 @@
           </p>
         </article>
 
-      </div>
+      </div> <!-- metricas-content -->
 
-    </section>
+    </section> <!-- metricas -->
 
     <section class="vagas">
 
@@ -95,83 +95,139 @@
           </p>
 
         </div>
+        
+        <img class="vagas-talentos-image" src="./assets/images/team.png" alt="Pessoas sentadas em uma mesa com notebooks abertos">
 
-        <img src="./assets/images/team.png" alt="Pessoas sentadas em uma mesa com notebooks abertos">
-
-      </div>
+      </div> <!-- vagas-talentos -->
 
       <div class="vagas-abertas">
 
         <div class="vagas-abertas-container">
 
-          <h3 class="vagas-abertas-container-text">Design</h3>
+          <div class="vagas-abertas-container-content">
 
-          <div class="vagas-abertas-container-items">
-            <ol class="vagas-abertas-item">
-              <li>
-                <p class="vagas-abertas-item-text">Product Designer</p>
-                <div class="vagas-abertas-item-details">
-                  <ol class="vagas-abertas-subitem">
-                    <li>Full-time</li>
-                    <li>Faixa salarial: R$7.000</li>
-                  </ol>
-                </div>
-              </li>
-              <li>
-                <p class="vagas-abertas-item-text">UX Designer</p>
-                <div class="vagas-abertas-item-details">
-                  <ol class="vagas-abertas-subitem">
-                    <li>Full-time</li>
-                    <li>Faixa salarial: R$6.000</li>
-                  </ol>
-                </div>
-              </li>
-            </ol>
-          </div>
+            <h3 class="vagas-abertas-container-text">Design</h3>
+  
+            <div class="vagas-abertas-container-items">
 
-        </div>
+              <ol class="vagas-abertas-item">
+
+                <li>
+                  <p class="vagas-abertas-item-text">Product Designer</p>
+                  <div class="vagas-abertas-item-details">
+                    <ol class="vagas-abertas-subitem">
+                      <li>Full-time</li>
+                      <li>Faixa salarial: R$7.000</li>
+                    </ol>
+                  </div>
+                </li>
+
+                <li>
+                  <p class="vagas-abertas-item-text">UX Designer</p>
+                  <div class="vagas-abertas-item-details">
+                    <ol class="vagas-abertas-subitem">
+                      <li>Full-time</li>
+                      <li>Faixa salarial: R$6.000</li>
+                    </ol>
+                  </div>
+                </li>
+
+              </ol> <!-- vagas-abertas-item -->
+
+            </div> <!--vagas-abertas-container-items -->
+
+          </div> <!-- container-content -->
+
+        </div> <!-- vagas-abertas-container -->
 
         <div class="vagas-abertas-container">
 
-          <h3 class="vagas-abertas-container-text">Desenvolvimento de Software</h3>
+          <div class="vagas-abertas-container-content">
 
-          <div class="vagas-abertas-container-items">
-            <ol class="vagas-abertas-item">
-              <li>
-                <p class="vagas-abertas-item-text">Desenvolvedor(a) iOS</p>
-                <div class="vagas-abertas-item-details">
-                  <ol class="vagas-abertas-subitem">
-                    <li>Full-time</li>
-                    <li>Faixa salarial: R$8.000</li>
-                  </ol>
-                </div>
-              </li>
-              <li>
-                <p class="vagas-abertas-item-text">Desenvolvedor(a) Front-end</p>
-                <div class="vagas-abertas-item-details">
-                  <ol class="vagas-abertas-subitem">
-                    <li>Full-time</li>
-                    <li>Faixa salarial: R$7.000</li>
-                  </ol>
-                </div>
-              </li>
-              <li>
-                <p class="vagas-abertas-item-text">Desenvolvedor(a) Back-end</p>
-                <div class="vagas-abertas-item-details">
-                  <ol class="vagas-abertas-subitem">
-                    <li>Full-time</li>
-                    <li>Faixa salarial: R$8.000</li>
-                  </ol>
-                </div>
-              </li>
-            </ol>
-          </div>
+            <h3 class="vagas-abertas-container-text">Desenvolvimento de Software</h3>
 
-        </div>
+            <div class="vagas-abertas-container-items">
 
-      </div>
+              <ol class="vagas-abertas-item">
 
-    </section>
+                <li>
+                  <p class="vagas-abertas-item-text">Desenvolvedor(a) iOS</p>
+                  <div class="vagas-abertas-item-details">
+                    <ol class="vagas-abertas-subitem">
+                      <li>Full-time</li>
+                      <li>Faixa salarial: R$8.000</li>
+                    </ol>
+                  </div>
+                </li>
+
+                <li>
+                  <p class="vagas-abertas-item-text">Desenvolvedor(a) Front-end</p>
+                  <div class="vagas-abertas-item-details">
+                    <ol class="vagas-abertas-subitem">
+                      <li>Full-time</li>
+                      <li>Faixa salarial: R$7.000</li>
+                    </ol>
+                  </div>
+                </li>
+
+                <li>
+                  <p class="vagas-abertas-item-text">Desenvolvedor(a) Back-end</p>
+                  <div class="vagas-abertas-item-details">
+                    <ol class="vagas-abertas-subitem">
+                      <li>Full-time</li>
+                      <li>Faixa salarial: R$8.000</li>
+                    </ol>
+                  </div>
+                </li>
+
+              </ol> <!-- vagas-abertas-item -->
+
+            </div> <!--vagas-abertas-container-items -->
+
+          </div> <!-- container-content -->
+
+        </div> <!-- vagas-abertas-container -->
+
+      </div> <!-- vagas-abertas -->
+
+    </section> <!-- vagas -->
+
+    <section class="depoimentos">
+
+      <div class="depoimentos-container">
+
+        <div class="depoimentos-container-content">
+
+          <div class="depoimentos-container-content-subheading">
+
+            <span class="depoimentos-container-content-subheading-title">
+              Veja o que nossos colaboradores falam sobre nós
+            </span>
+
+            <p class="depoimentos-container-content-subheading-quote">
+              OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.
+            </p>
+
+          </div> <!-- depoimentos-container-content-subheading -->
+
+          <div class="depoimentos-container-content-attribution">
+
+            <img class="depoimentos-container-content-attribution-avatar" src="./assets/images/Avatar.png" alt="avatar de uma mulher">
+
+            <div class="depoimentos-container-content-attribution-supporting">
+
+              <p class="user">Júlia Castro</p>
+              <p class="job">Desenvolvedora Web</p>
+
+            </div> <!-- depoimentos-container-content-attribution-supporting -->
+
+          </div> <!-- depoimentos-container-content-attribution -->
+
+        </div> <!-- depoimentos-container-content -->
+
+      </div> <!-- depoimentos-container -->
+
+    </section> <!-- depoimentos -->
 
   </body>
 </html>

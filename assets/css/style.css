@@ -1,6 +1,6 @@
 :root {
   --text-color: #667085;
-  --main-color: #8E2424;
+  --main-color: #8e2424;
   --heading-color: #101828;
 }
 
@@ -16,36 +16,36 @@ body {
   padding: 1rem 2rem;
 }
 
-.button-base {
+.navbar-button-base {
   display: flex;
   text-align: center;
   gap: 0.5rem;
 }
 
-.button-base-logo {
+.navbar-button-base-logo {
   width: 27px;
   height: 26.99px;
 }
 
-.button-base-text {
+.navbar-button-base-text {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
 }
 
-.content {
+.navbar-content {
   display: flex;
   align-items: center;
 }
 
-.content ul {
+.navbar-content ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
 
-.content-link {
+.navbar-content-link {
   text-decoration: none;
   margin-right: 2rem;
   font-size: 16px;
@@ -55,12 +55,12 @@ body {
   color: var(--text-color);
 }
 
-.navigation-actions {
+.navbar-navigation-actions {
   display: flex;
   gap: 12px;
 }
 
-.navigation-actions-button-start {
+.navbar-navigation-actions-button-start {
   padding: 0.63rem 1.13rem;
   cursor: pointer;
   border: none;
@@ -72,7 +72,7 @@ body {
   color: var(--text-color);
 }
 
-.navigation-actions-button-register {
+.navbar-navigation-actions-button-register {
   padding: 0.63rem 1.13rem;
   cursor: pointer;
   border: 1px solid var(--main-color);
@@ -158,14 +158,13 @@ body {
 .vagas {
   display: flex;
   flex-direction: column;
-  padding: 6rem 0;
   gap: 4rem;
+  padding: 6rem 0;
 }
 
 .vagas-talentos {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4rem;
 }
 
@@ -174,13 +173,20 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 0 2rem;
 }
 
 .vagas-talentos-container-badge {
+  width: 7.81rem;
+  height: 1.75rem;
+  padding: 0.25rem 0.75rem;
+  background-color: rgb(142, 36, 36, 5%);
+  color: var(--main-color);
+  border-radius: 1rem;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  color: var(--main-color);
+  text-align: center;
 }
 
 .vagas-talentos-container-heading {
@@ -199,17 +205,22 @@ body {
   color: var(--text-color);
 }
 
+.vagas-talentos-image {
+  padding: 0 2rem;
+}
+
 .vagas-abertas {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  padding: 0 2rem;
 }
 
 .vagas-abertas-container {
+  padding: 2rem 4rem;
+}
+
+.vagas-abertas-container-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 0 32rem;
+  gap: 4rem;
 }
 
 .vagas-abertas-container-text {
@@ -253,4 +264,78 @@ body {
   list-style-type: none;
   gap: 1.5rem;
   padding: 1.50rem 0;
+}
+
+.depoimentos {
+  padding: 6rem 0;
+}
+
+.depoimentos-container {
+  padding: 0 2rem;
+}
+
+.depoimentos-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: rgb(142, 36, 36, 3%);
+  color: var(--main-color);
+}
+
+.depoimentos-container-content-subheading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.depoimentos-container-content-subheading-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.depoimentos-container-content-subheading-quote {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.depoimentos-container-content-attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.depoimentos-container-content-attribution-avatar {
+  width: 3.50rem;
+  height: 3.50rem;
+}
+
+.depoimentos-container-content-attribution-supporting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+  color: var(--text-color);
+
+  .user {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .job {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
